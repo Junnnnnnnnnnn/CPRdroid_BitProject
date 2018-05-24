@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/agelist_shape"
+    >
+
+
+    <ImageView
+        android:id="@+id/TargetIcon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/Screen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/TargetIcon"
+        android:layout_marginBottom="5dp"
+        android:text="대상 : " />
+
+    <TextView
+        android:id="@+id/TargetScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Screen1"
+        android:layout_toEndOf="@+id/Screen1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Screen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Screen1"
+        android:layout_below="@+id/Screen1"
+        android:layout_marginBottom="5dp"
+        android:text="나이 : " />
+
+    <TextView
+        android:id="@+id/AgeScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Screen2"
+        android:layout_toEndOf="@+id/Screen1"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/BtnGuide"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/TargetIcon"
+        android:layout_below="@+id/Screen2"
+        android:layout_marginRight="5dp"
+        android:text="방법" />
+
+    <Button
+        android:id="@+id/BtnPlay"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/BtnGuide"
+        android:layout_below="@+id/Screen2"
+        android:text="시작하기" />
+
+</RelativeLayout>

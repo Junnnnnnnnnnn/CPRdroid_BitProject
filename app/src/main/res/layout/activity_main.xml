@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/angry_btn"
+
+        android:text="블루투스 설정"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:drawableLeft="@drawable/bluetoothbutton"
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bluetoothbutton_shape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_margin="15dp"
+        />
+
+    <ListView
+        android:id="@+id/AgeInfoListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cprlistview_shape"
+        android:layout_margin="10dp"
+        />
+
+
+</LinearLayout>
